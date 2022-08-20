@@ -34,7 +34,7 @@ const handleNewUser = async (req, res) => {
       .status(409)
       .json({ status: false, message: "User already exists." }); //Conflict
 
-  const password = generatePassword();
+  const password = mobileNumber;
 
   const newUser = {
     userId: panNumber,
