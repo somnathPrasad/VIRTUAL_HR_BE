@@ -16,12 +16,26 @@ const userSchema = new Schema({
     companyId: {
         type: mongoose.SchemaTypes.ObjectId
     },
+    aadharNumber: {
+        type: String,
+    },
+    panNumber: {
+        type: String,
+    },
+    mobileNumber:{
+        type: mongoose.SchemaTypes.String
+    },
+    address:{
+        type: String
+    },
+    email: {
+        type: String
+    },
     roles: {
         User: {
             type: Number,
             default: 2001
         },
-        Editor: Number,
         Admin: Number
     },
     password: {

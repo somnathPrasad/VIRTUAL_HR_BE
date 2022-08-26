@@ -20,6 +20,7 @@ const handleLogin = async (req, res) => {
       {
         UserInfo: {
           userId: foundUser.userId,
+          companyId: foundUser.companyId,
           roles: roles,
         },
       },
